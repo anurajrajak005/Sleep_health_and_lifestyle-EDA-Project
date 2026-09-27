@@ -1,75 +1,79 @@
-🌙 Sleep Health & Lifestyle Analysis (EDA)
-📌 Project Overview
-In today’s fast-paced environment, poor sleep quality and sleep disorders are becoming increasingly common, impacting productivity, mental well-being, and overall health.
+# 🌙 Sleep Health & Lifestyle Analysis (EDA)
 
-This project performs an Exploratory Data Analysis (EDA) on the Sleep Health and Lifestyle Dataset to uncover key insights into how daily habits, work environments, and physiological metrics correlate with sleep quality and the prevalence of sleep disorders.
+## 📌 Project Overview
 
-🎯 Key Objectives
-Occupational Impact: Analyze how different professions affect stress levels and average sleep duration.
+In today’s fast-paced environment, sleep quality and lifestyle habits play an important role in overall health and well-being. This project performs **Exploratory Data Analysis (EDA)** on the **Sleep Health and Lifestyle Dataset** to identify patterns and relationships between sleep, lifestyle, occupation, stress, physical activity, and health indicators.
 
-Lifestyle Factors: Examine the relationship between daily physical activity (daily steps, physical activity level) and sleep quality.
+## 🎯 Key Objectives
 
-Health Risk Factors: Evaluate how physiological indicators (BMI category, Blood Pressure, Heart Rate) correlate with sleep disorders such as Sleep Apnea and Insomnia.
+* **Occupational Impact:** Analyze how different occupations relate to stress levels and average sleep duration.
+* **Lifestyle Factors:** Examine the relationship between physical activity, daily steps, and sleep quality.
+* **Health Risk Factors:** Analyze BMI, Blood Pressure, and Heart Rate in relation to sleep disorders such as Insomnia and Sleep Apnea.
+* **Demographic Analysis:** Explore sleep patterns across different genders and age groups.
 
-Demographic Analysis: Discover patterns in sleep behavior across different genders and age groups.
+## 📊 Dataset Summary
 
-Feature,Description
-Person ID,Unique identifier for each individual
-Gender,Male / Female
-Age,Age in years
-Occupation,Professional field/job title
-Sleep Duration,Average hours of sleep per day
-Quality of Sleep,Subjective rating (scale: 1–10)
-Physical Activity Level,Daily active minutes
-Stress Level,Subjective rating (scale: 1–10)
-BMI Category,"Weight classification (Underweight, Normal, Overweight, Obese)"
-Blood Pressure,Systolic/Diastolic reading (mmHg)
-Heart Rate,Resting heart rate (BPM)
-Daily Steps,Average step count per day
-Sleep Disorder,"Condition presence (None, Insomnia, Sleep Apnea)"
+The dataset contains **374 records and 13 features**:
 
-🛠️ Tech Stack & Libraries Used
-Language: Python
+| Feature                 | Description                  |
+| ----------------------- | ---------------------------- |
+| Person ID               | Unique identifier            |
+| Gender                  | Male / Female                |
+| Age                     | Age in years                 |
+| Occupation              | Professional field           |
+| Sleep Duration          | Average sleep hours per day  |
+| Quality of Sleep        | Rating from 1–10             |
+| Physical Activity Level | Daily active minutes         |
+| Stress Level            | Rating from 1–10             |
+| BMI Category            | Weight classification        |
+| Blood Pressure          | Systolic / Diastolic reading |
+| Heart Rate              | Resting heart rate           |
+| Daily Steps             | Average daily steps          |
+| Sleep Disorder          | None, Insomnia, Sleep Apnea  |
 
-Data Manipulation: pandas, numpy
+## 🛠️ Tech Stack
 
-Data Visualization: matplotlib, seaborn
+**Python | Pandas | NumPy | Matplotlib | Seaborn | SciPy | Jupyter Notebook**
 
-Statistical Analysis: scipy / statistics
+## 🔍 Analytical Workflow
 
-Environment: Jupyter Notebook / JupyterLab
+**Data Cleaning & Preprocessing**
 
-🔍 Analytical Workflow
-Data Cleaning & Preprocessing:
+* Handled missing values and standardized categories.
+* Split Blood Pressure into **Systolic** and **Diastolic** values.
+* Cleaned and standardized BMI categories.
 
-Handled missing values (e.g., standardizing missing values in Sleep Disorder to 'None').
+**Univariate Analysis**
 
-Parsed combined values like Blood Pressure into numerical Systolic and Diastolic components.
+* Analyzed distributions of sleep duration, heart rate, and daily steps.
+* Examined frequency of occupations, BMI categories, and sleep disorders.
 
-Cleaned string categories in BMI Category (e.g., merging 'Normal' and 'Normal Weight').
+**Bivariate & Multivariate Analysis**
 
-Univariate Analysis:
+* Created correlation heatmaps to identify relationships between variables.
+* Used box plots and scatter plots to analyze sleep quality, physical activity, and stress levels.
 
-Distribution of numerical metrics (sleep duration, heart rate, daily steps) using histograms and density plots.
+## 📈 Key Insights
 
-Frequency counts of categorical metrics (occupations, sleep disorders, BMI).
+The analysis identifies patterns related to **stress, physical activity, occupation, sleep quality, and health indicators**, helping understand factors associated with sleep disorders.
 
-Bivariate & Multivariate Analysis:
+## 📁 Repository Structure
 
-Correlation heatmaps to map linear dependencies across variables.
-
-Box plots and scatter plots comparing sleep quality against physical activity levels and stress ratings across occupations.
-
-Key Insights & Findings:
-
-Summarized actionable findings regarding high-stress occupations, optimal step counts, and high-risk indicators for sleep disorders.
-
-📁 Repository Structure
-Plaintext
+```text
+Sleep-Health-Lifestyle-Analysis/
+│
 ├── data/
 │   └── Sleep_health_and_lifestyle_dataset.csv
+│
 ├── notebooks/
 │   └── Sleep_health_and_lifestyle_EDA.ipynb
+│
 ├── README.md
 └── requirements.txt
+```
 
+## 🚀 Skills Demonstrated
+
+**Data Cleaning | Data Preprocessing | EDA | Statistical Analysis | Data Visualization | Correlation Analysis | Insight Generation**
+
+🔗 **GitHub Project:** [Add Your GitHub Repository Link Here]
